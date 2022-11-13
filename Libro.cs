@@ -7,4 +7,8 @@ public class Libro: Documento
     {
         Pagine = pagine;
     }
+    public override string ToString()
+    {
+        return base.ToString();
+    }
 }

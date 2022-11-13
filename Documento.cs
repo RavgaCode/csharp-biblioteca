@@ -19,4 +19,12 @@ public class Documento
         Autore = autore;
         Codice = codice;
     }
+    public string Disponibilità()
+    {
+        return Stato ? "disponibile" : "in prestito";
+    }
+    public override string ToString()
+    {
+        return Titolo + " - " + Autore + " - " + Codice + " - " + Disponibilità();
+    }
 }

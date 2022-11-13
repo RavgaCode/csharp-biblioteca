@@ -7,4 +7,8 @@ public class Dvd : Documento
     {
         Durata = durata;
     }
+    public override string ToString()
+    {
+        return base.ToString();
+    }
 }
